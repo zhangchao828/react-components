@@ -1,0 +1,75 @@
+{
+  "name": "@zswl/components",
+  "version": "1.4.1",
+  "description": "react components",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "es/index.d.ts",
+  "repository": "http://172.16.200.10:8081/zswl/react-components.git",
+  "author": "zhangchao <350346750@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "father build",
+    "pub": "node publish.js",
+    "prepare": "npm run build",
+    "start": "storybook dev -p 3000",
+    "build-storybook": "storybook build"
+  },
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ],
+  "sideEffects": [
+    "es/*",
+    "lib/*",
+    "dist/*",
+    "*.less"
+  ],
+  "dependencies": {
+    "@ant-design/icons": "4.7.0",
+    "array-move": "4.0.0",
+    "classnames": "2.5.1",
+    "lodash-es": "4.17.21",
+    "react-draggable": "4.4.5",
+    "react-resizable": "3.0.5",
+    "react-sortable-hoc": "2.0.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.18.3",
+    "@chromatic-com/storybook": "^1.2.26",
+    "@storybook/addon-essentials": "^8.0.5",
+    "@storybook/addon-interactions": "^8.0.5",
+    "@storybook/addon-links": "^8.0.5",
+    "@storybook/addon-onboarding": "^8.0.5",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/blocks": "^8.0.5",
+    "@storybook/react": "^8.0.5",
+    "@storybook/react-webpack5": "^8.0.5",
+    "@storybook/test": "^8.0.5",
+    "antd": "^4.24.12",
+    "enquirer": "^2.3.6",
+    "father": "4.4.0",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "mobx": "6.6.0",
+    "mobx-react-lite": "3.4.0",
+    "moment": "^2.30.1",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "shelljs": "^0.8.5",
+    "storybook": "^8.0.5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "printWidth": 100
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}

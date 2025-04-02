@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+.idea
+dist
+yarn.lock
+yarn-error.log
+package-lock.json
+.umi
+lib
+es
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
+*storybook.log
+.yarn
